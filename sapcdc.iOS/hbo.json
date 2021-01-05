@@ -1,0 +1,11 @@
+{
+    "applinks": {
+        "apps": [],
+        "details": [
+            {
+                "appID": "Y32EQUAEWX.com.willowtreeapps.aviato",
+                "paths": ["/", "/watchlist", "/series/*", "/movies/*", "/kids", "/kids/*", "/toonix", "/toonix/*"]
+            }
+        ]
+    }
+}

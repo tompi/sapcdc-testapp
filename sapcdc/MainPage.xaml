@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:sapcdc="clr-namespace:sapcdc;assembly=sapcdc"
+             BackgroundColor="Black"
+             x:DataType="sapcdc:MainPageViewModel"
+             x:Class="sapcdc.MainPage">
+
+    <StackLayout>
+        <Label Text="myLaerdal SAP CDC" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        <Button Text="Authenticate" Command="{Binding AuthenticateCommand}"/>
+    </StackLayout>
+
+</ContentPage>

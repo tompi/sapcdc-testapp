@@ -1,0 +1,18 @@
+{
+    "applinks": {
+        "apps": [],
+        "details": [
+            {
+                "appIDs": [ "PU57C87JS6.com.laerdal.mylaerdal" ],
+                "appID": "PU57C87JS6.com.laerdal.mylaerdal",
+                "components": [
+                    {
+                        "/": "/redirect*",
+                        "comment": "Matches any URL that starts with /redirect"
+                    }
+                ],
+                "paths": [ "/redirect*"]
+            }
+        ]
+    }
+}
