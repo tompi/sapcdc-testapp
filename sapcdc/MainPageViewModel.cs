@@ -1,7 +1,8 @@
 using System;
 using System.Threading.Tasks;
 using AsyncAwaitBestPractices.MVVM;
-using Xamarin.Essentials;
+using sapcdc.AuthMethods;
+using Xamarin.Forms;
 
 namespace sapcdc
 {
@@ -16,13 +17,11 @@ namespace sapcdc
         {
             try
             {
-                
-                var authResult = await WebAuthenticator.AuthenticateAsync(
-                    new Uri(
-                        "https://fidm.eu1.gigya.com/oidc/op/v1.0/3_sIqZ_dwxuvxSn1GVtYhwVWcVU3JT3OLiXGKKFZo5aRZTHGhIn3NpoKTp20StKb9m/authorize?client_id=Y1WerR7Xg10827k6OairGlIw&scope=profile+email+openid+fed_liveborn_dev&nonce=12312412&redirect_uri=https://id-dev.laerdal.com/redirect&response_type=id_token"),
-                    new Uri("https://id-dev.laerdal.com/redirect"));
+                IAuthenticate authenticator;
+                //authenticator = new AuthMethods.WebAuthenticator();
+                authenticator = DependencyService.Get<INativeAuthenticate>();
 
-                Token = authResult?.IdToken;
+                Token = await authenticator.GetToken();
             }
             catch (Exception e)
             {

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+<sapcdc:LoginPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:sapcdc="clr-namespace:sapcdc;assembly=sapcdc"
              BackgroundColor="Black"
@@ -12,4 +12,4 @@
         <Label TextColor="White" Text="{Binding Token}"></Label>
     </StackLayout>
 
-</ContentPage>
+</sapcdc:LoginPage>
