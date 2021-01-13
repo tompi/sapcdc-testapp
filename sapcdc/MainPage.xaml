@@ -9,6 +9,7 @@
     <StackLayout>
         <Label Text="myLaerdal SAP CDC" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
         <Button Text="Authenticate" Command="{Binding AuthenticateCommand}"/>
+        <Label TextColor="White" Text="{Binding Token}"></Label>
     </StackLayout>
 
 </ContentPage>
